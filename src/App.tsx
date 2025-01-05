@@ -4,7 +4,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import mainBG from "./assets/space.png";
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [result, setResults] = useState<any>({callsign:''});
+  const [result, setResults] = useState<any>({ callsign: "" });
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (e: any) => {
@@ -67,7 +67,7 @@ function App() {
         </form>
         {loading ? (
           <p className="text-white text-center">Searching...</p>
-        ) : result.callsign!='' ? (
+        ) : result.callsign != "" ? (
           <div className="space-y-4">
             <div className="grid grid-cols-2 bg-white p-4 rounded-lg shadow-md text-gray-800">
               <h2 className="text-2xl font-bold col-span-2 mb-4">
