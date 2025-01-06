@@ -67,7 +67,7 @@ function App() {
         </form>
         {loading ? (
           <p className="text-white text-center">Searching...</p>
-        ) : result.callsign != "" ? (
+        ) : result.full_name&&result.full_name != "" ? (
           <div className="space-y-4">
             <div className="grid grid-cols-2 bg-white p-4 rounded-lg shadow-md text-gray-800">
               <h2 className="text-2xl font-bold col-span-2 mb-4">
